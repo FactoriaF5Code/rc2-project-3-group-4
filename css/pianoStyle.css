@@ -1,0 +1,230 @@
+:root{
+    --pink: #ffb39b;
+        --yellow: #fabb19;
+        --green: #17875a;
+        --red: #ff5f5f;
+        --turquoise: #00ced4;
+        --blue-light: #90afdd;
+        --blue: #5d73a3;
+        --blue-dark: #314a6d;
+        --navy: #14303f;
+        --grey-med: #b5bac6;
+        --grey-light: #ebecf0;
+        --dark: #2a2a22;
+        --grey-dark: grey;
+        --pink-dark: #f955f2;
+    
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        
+    }
+     *,*::before,*::after {
+      box-sizing: inherit;
+    }
+    /*  Globales **/
+    html {
+        font-size: 62.5%;
+        
+    }
+    body {
+        background-color: var(--grey-light);
+        font-size: 16px; /* 1rem = 10px */
+    }
+    main{
+        width: 100vw;
+        height: 100vh;
+        
+    }
+   
+    .main_img_pizarra{
+        position: absolute;
+        z-index: 4;
+        width: 65rem;
+        top: 1%;
+        left: 25%;
+    }
+    .main_img_interruptorPared{
+        position: absolute;
+        z-index: 2;
+        width: 10rem;
+        top: 60%;
+        left: 2%;
+        border: 20px sólido #808080;
+        cursor: pointer;
+    }
+    .main_img--gatoNegro{
+        position: absolute;
+        z-index: 3;
+        width: 20rem;
+        top: 50%;
+        left: 80%;
+    }
+    .main_img--paraElisa{
+      position: absolute;
+      z-index: 3;
+      top: 45%;
+      left: 10%;
+    }
+    .main_img--nochePaz{
+      position: absolute;
+      z-index: 3;
+      top: 10%;
+      left: 4%;
+    }
+    .main_img--himnoAlegria{
+      position: absolute;
+      z-index: 3;
+      top: 25%;
+      left: 80%;
+    }
+    
+    #piano {
+        background-color: var(--grey-dark);
+        border: 5px #2a2a22 solid;
+        width: 53rem;
+        height: 15rem;
+        margin: 80px auto;
+        padding: 90px 20px 0 20px;
+        position: relative;
+        border-radius: 10px;
+        position: absolute;
+        top: 4%;
+        left: 28%;
+        z-index: 4;
+         
+      }
+      
+      .keys {
+        background-color: #040404;
+        width: 55rem;
+        height: 13rem;
+        padding-left: 2px;
+        position: absolute;
+        top: 30%;
+        left: 28.5%;
+        
+      }
+      
+      .key {
+        background-color: #ffffff;
+        position: relative;
+        width: 2rem;
+        height: 15rem;
+        margin: 2px;
+        float: left;
+        border-radius: 0 0 3px 3px;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 200px;
+        cursor: pointer;
+        z-index: 7;
+        box-shadow: 6px 10px 10px black;
+      }
+      .key:active{
+        transform: translateY(2px);
+        box-shadow: none;
+
+      }
+      .key.key:hover {
+          background-color: var(--grey-dark);
+          color: white;
+      }
+      
+      .key.black--key::after {
+        background-color: #1d1e22;
+        content: "";
+        position: absolute;
+        left: -18px;
+        width: 1rem;
+        height: 7rem;
+        border-radius: 0 0 3px 3px;
+      }
+      
+      
+      .logo {
+        width: 200px;
+        position: absolute;
+        z-index: 8;
+        top: 8rem;
+        left: 37rem;
+      }
+      
+      /*@media (max-width: 768px) {
+        #piano {
+          width: 358px;
+        }
+      
+        .keys {
+          width: 318px;
+        }
+        
+      
+        .logo {
+          width: 150px;
+        }
+      }
+      
+      @media (max-width: 1199px) and (min-width: 769px) {
+        #piano {
+          width: 675px;
+        }
+        .keys {
+          width: 633px;
+        }
+      }
+      .key.active {
+          background-color: yellow; /* Cambia a tu color deseado */
+     
+      #playButton {
+          background-color: var(--dark); /* Color de fondo */
+          color: white; /* Color del texto */
+          padding: 10px 20px; /* Espaciado interno */
+          font-size: 16px; /* Tamaño de fuente */
+          cursor: pointer; /* Cambia el cursor al pasar el ratón */
+          border: 1px solid white; /* Sin borde */
+          border-radius: 50px; /* Esquinas redondeadas */
+          position: absolute;
+          z-index: 10;
+          top: 20%;
+          left: 52%;
+          box-shadow: 6px 10px 10px black;  
+             
+
+      }
+      #playButton:active{
+        transform: translateY(2px);
+        box-shadow: none;  
+
+      }
+      #toggleNoteButton{
+        background-color: var(--dark); /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 10px 20px; /* Espaciado interno */
+        font-size: 16px; /* Tamaño de fuente */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        border: 1px solid white; /* Sin borde */
+        border-radius: 50px; /* Esquinas redondeadas */
+        position: absolute;
+        z-index: 10;
+        top: 20%;
+        left: 60%;
+        box-shadow: 6px 10px 10px black; 
+        
+      }
+      #toggleNoteButton:active{
+        transform: translateY(2px);
+        box-shadow: none;  
+
+      }
+      
+      
+      .hideNote {
+          display: none;}
+      
+      /* Cambia el estilo del botón al pasar el ratón sobre él */
+      
+          
+      
+      

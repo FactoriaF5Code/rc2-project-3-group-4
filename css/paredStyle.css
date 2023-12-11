@@ -1,0 +1,177 @@
+:root{
+--pink: #ffb39b;
+    --yellow: #fabb19;
+    --green: #17875a;
+    --red: #ff5f5f;
+    --turquoise: #00ced4;
+    --blue-light: #90afdd;
+    --blue: #5d73a3;
+    --blue-dark: #314a6d;
+    --navy: #14303f;
+    --grey-med: #b5bac6;
+    --grey-light: #ebecf0;
+    --dark: #2a2a22;
+    --grey-dark: grey;
+    --pink-dark: #f955f2;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+ *,*::before,*::after {
+  box-sizing: inherit;
+}
+/*  Globales **/
+html {
+    font-size: 62.5%;
+    
+}
+body {
+    background-color: var(--grey);
+    font-size: 16px; /* 1rem = 10px */
+}
+
+#main{
+  
+  width: 100vw;
+  height: 100vh;
+ 
+  
+}
+/*Pared*/
+.main_img--fondo{
+    width: 100vw;
+    height: 99vh;
+}
+.main_img--ordenador{
+   
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    width: 35rem; 
+    z-index: 10;  
+    cursor: pointer;
+}
+.main_img--bienvenidPared{
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    width: 35rem; 
+    z-index: 9;  
+    
+ 
+}
+.main_img--ordenador:active{
+    z-index: 5;
+
+}
+
+.main_img--estanteria{
+    position: absolute;
+    z-index: 9;
+    top: 10%;
+    left: 63%;
+    width: 45rem;
+}
+.main_img_poster{
+    position: absolute;
+    z-index: 3;
+    left:25%;
+    top: 18%;
+    width: 30rem;
+}
+.main_img--nota{
+    width: 15rem;
+    position: absolute;
+    z-index: 6;
+    top: 40%;
+    left: 75%;
+}
+.main_img--nota:hover{
+width: 25rem;
+}
+.main_img_foto{
+    position: absolute;
+    z-index: 5;
+    width: 15rem;
+    top: 40%;
+    left: 10%;
+}
+.main_img--cocacola{
+    position: absolute;
+    z-index: 10;
+    width: 5rem;
+    top: 16.5%;
+    left: 73.3%;
+}
+.main_img--foto2{
+    position: absolute;
+    z-index: 4;    
+    top: 40%;
+    left: 63%;
+    cursor: pointer;
+}
+.main_img_yoda{
+    position: absolute;
+    z-index: 3;
+    width: 15rem;
+    top: 15%;
+    left: 5%;
+    cursor: pointer;
+}
+.main_img--agujero{
+    position: absolute;
+    z-index: 2;
+    width: 10rem;
+    top: 67.6%;
+    left: 90%;
+    cursor: pointer;
+}
+.main_img--ratonAgujero{
+    position: absolute;
+    z-index: 1;
+    width: 4rem;
+    top: 65%;
+    left: 91.7%;
+    
+}
+.main_img_interruptorPared{
+   position: absolute;
+   z-index: 2;
+   width: 10rem;
+   top: 60%;
+   left: 2%;
+   border: 20px sólido #808080;
+   cursor: pointer;
+    
+}
+.main_img--nombre{
+    position: absolute;
+    z-index: 1;
+    width: 20rem;
+    top: 78%;
+   
+    left: 76%;
+}
+
+.imgDirector{
+    width: 20rem;
+position: absolute;
+    top: 27%;
+    left: 27%;
+    z-index: 3;
+ }
+ .imgPiano{
+    width: 15rem;
+    position: absolute;
+    top: 44%;
+    left: 10%;
+    z-index: 11;
+ }
+ 
+
+
+/*Fin pared*/
+

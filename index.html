@@ -1,20 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main>
-        <div class="piano">
-            
-        </div>
-        
-    </main>
-    <footer></footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/paredStyle.css" />
+    <title>PianoJS</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="main_pared--inicial">
+        <img id="imgFondo" class="main_img--fondo"
+        src="img/fondoPared.png">
+        <img
+          id="imgOrdenador"
+          class="main_img main_img--ordenador"
+          src="img/ordenadorPared.png"
+          alt=""
+        />
+        <img
+          id="imgEstanteria"
+          class="main_img main_img--estanteria"
+          src="img/estanteriaPared.png"
+          alt=""
+        />
+        <img
+          id="imgPoster"
+          class="main_img main_img_poster"
+          src="img/posterPared.png"
+          alt=""
+        />
+        <img
+          id="imgYoda"
+          class="main_img main_img_yoda"
+          src="img/yodaPared.png"
+          alt=""
+        />
+        <img
+          id="imgNota"
+          class="main_img main_img--nota"
+          src="img/NotaPared.png"
+          alt=""
+        />
+        <img
+          id="imgFoto"
+          class="main_img main_img_foto"
+          src="img/fotoPared.png"
+          alt=""
+        />
+        <img
+          id="imgInterruptor"
+          class="main_img main_img_interruptorPared"
+          onclick="changeInterruptor();changeOrdenador();changeEstanteria();changePoster();changeYoda();changeNota; changeFoto(); changeFoto2();changeCola(); changeNombre();changeFondo()"
+          src="img/interruptorPared.png"
+          alt=""
+        />
+        <img
+          id="imgFoto2"
+          class="main_img main_img--foto2"
+          src="img/fotoPared2.png"
+          alt=""
+        />
+        <img
+          id="myImage"
+          class="main_img main_img--agujero"
+          onclick="changeImage()"
+          src="img/agujeroPared.png"
+          alt=""
+        />
+        <img
+          id="imgCola"
+          class="main_img main_img--cocacola"          
+          src="img/cocacolaPared.png"
+          alt=""
+        />
+        <img id="imgNombre"
+        class="main_img--nombre"
+        src="img/nombre.png">
+       <img src="img/bienvenidaPared.png" class="main_img--bienvenidPared">
 
-</body>
+        <a href="#" class=""><img class="imgDirector" src="img/directorOrquesta.png"></a>
+        <a href="piano.html" class="" target="_blank"><img class="imgPiano" src="img/Piano.png" ></a>
+          </div>
+
+      
+    </main>
+
+    <script src="js/pared.js"></script>
+  </body>
 </html>
