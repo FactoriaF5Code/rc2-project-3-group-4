@@ -63,49 +63,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
    
     let isSongPlaying = false; // Variable para rastrear si la canción está reproduciéndose
-
+    let audio = new Audio('notes/piano.mp3');
     // Manejador de clic en el botón de reproducción de canción
     const playButton = document.getElementById('playButton');
     playButton.addEventListener('click', function () {
         if (!isSongPlaying) {
             playSong();
             isSongPlaying = true;
-            playButton.textContent = 'Detener Canción'; // Cambia el texto del botón
+            playButton.textContent = 'Detener Canción'; 
         } else {
             stopSong();
             isSongPlaying = false;
-            playButton.textContent = 'Reproducir Canción'; // Cambia el texto del botón
+            playButton.textContent = 'Reproducir Canción'; 
         }
     });
 
     function playSong() {
-        // Cambia la siguiente línea con la ruta correcta de tu canción
-        let audio = new Audio('notes/piano.mp3');
         audio.currentTime = 0;
         audio.play();
     };
-
     function stopSong() {
-        // Detener la canción si está reproduciéndose
-        // (puedes necesitar ajustar esto dependiendo de la lógica específica)
-        let audio = new Audio('notes/piano.mp3');
         audio.pause();
         audio.currentTime = 0;
     }
-    const toggleNoteButton = document.getElementById('toggleNoteButton');
-    toggleNoteButton.addEventListener('click', function () {
-        const keys = document.querySelectorAll('.key');
-        keys.forEach(function (key) {
-            key.classList.toggle('hideNote'); // Agrega o quita la clase 'hideNote'
-        });
-    });
-    // Manejador de clic en el botón para ocultar/mostrar notas
-    const toggleNoteButton = document.getElementById('toggleNoteButton');
-    toggleNoteButton.addEventListener('click', function () {
-        const noteTexts = document.querySelectorAll('.note-text');
-        noteTexts.forEach(function (noteText) {
-            noteText.classList.toggle('hideNote'); // Agrega o quita la clase 'hideNote'
-        });
-    });
-
+    
+    
 });
