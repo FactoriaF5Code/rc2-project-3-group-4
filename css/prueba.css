@@ -112,6 +112,13 @@
         top: 40%;
         left: 90%; 
     }
+    .main_img--acordeon{
+        position: absolute;
+        z-index: 4;
+        top: 13%;
+        left: 2%; 
+        width: 10rem;
+    }
     
     
     .ff{
