@@ -157,13 +157,13 @@ function changeSaxofon() {
   let img = document.getElementById("imgSaxofon");
 
   if (img.src.match("Color")) {
-    img.src = "fotoaudio/audio/axofonbn.png";
+    img.src = "fotoaudio/audio/saxofonbn.png";
   } else {
     img.src = "fotoaudio/audio/saxofoncolor.png";
   }
 }
 function changeTambor() {
-  let img = document.getElementById("imgTrompeta");
+  let img = document.getElementById("imgTambor");
 
   if (img.src.match("Color")) {
     img.src = "fotoaudio/audio/tamborbn.png";
@@ -233,4 +233,5 @@ function reproducirAudioViolin() {
   let audio = new Audio('fotoaudio/audio/violin.mp3');
   audio.currentTime = 0;
   audio.play();
+} 
 }
