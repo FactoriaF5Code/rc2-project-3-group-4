@@ -27,84 +27,84 @@ function changeVentana() {
 }
 
 function changeA() {
-  let img = document.getElementById("fotoPared2a");
+  let img = document.getElementById("polaroidA");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2a.png";
+    img.src = "img/polaroidColorA.png";
   }
 }
 function changeB() {
-  let img = document.getElementById("fotoPared2b");
+  let img = document.getElementById("polaroidB");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2b.png";
+    img.src = "img/polaroidColorB.png";
   }
 }
 function changeC() {
-  let img = document.getElementById("fotoPared2c");
+  let img = document.getElementById("polaroidC");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2c.png";
+    img.src = "img/polaroidColorC.png";
   }
 }
 function changeD() {
-  let img = document.getElementById("fotoPared2d");
+  let img = document.getElementById("polaroidD");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2d.png";
+    img.src = "img/polaroidColorD.png";
   }
 }
 function changeE() {
-  let img = document.getElementById("fotoPared2e");
+  let img = document.getElementById("polaroidE");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2e.png";
+    img.src = "img/polaroidColorE.png";
   }
 }
 function changeF() {
-  let img = document.getElementById("fotoPared2f");
+  let img = document.getElementById("polaroidBF");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2f.png";
+    img.src = "img/polaroidColorF.png";
   }
 }
 function changeG() {
-  let img = document.getElementById("fotoPared2g");
+  let img = document.getElementById("polaroidG");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2g.png";
+    img.src = "img/polaroidColorG.png";
   }
 }
 function changeH() {
-  let img = document.getElementById("fotoPared2h");
+  let img = document.getElementById("polaroidH");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2h.png";
+    img.src = "img/polaroidColorH.png";
   }
 }
 function changeI() {
-  let img = document.getElementById("fotoPared2i");
+  let img = document.getElementById("polaroidI");
 
   if (img.src.match("Color")) {
-    img.src = "img/fotoPared2.png";
+    img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/fotoParedColor2i.png";
+    img.src = "img/polaroidColorI.png";
   }
 }
 function changeAcordeon() {

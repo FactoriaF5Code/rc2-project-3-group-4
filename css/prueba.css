@@ -37,12 +37,18 @@
         height: 100vh;
 
     }
+    .main_img--polaroid{
+width: 10rem;
+    }
+    .main_img{
+        width: 6rem;
+    }
     .img_main--ventanaNegra{
-        width: 30rem;
+        width: 42rem;
         position: absolute;
         z-index: 2;
-        top: 15%;
-        left: 40%;
+        top: 1%;
+        left: 35%;
     }
     .main_img--fondo{
         width: 100vw;
@@ -70,63 +76,63 @@
         position: absolute;
         z-index: 2;
         top: 2%;
-        left: 20%; 
+        left: 10%; 
     }
      /* CONTRABAJO*/
     .imgc{
         position: absolute;
         z-index: 2;
-        top: 40%;
-        left: 13%;
+        top: 12%;
+        left: 18%;
     }
      /* ELECTRICA*/
     .imgd{
         position: absolute;
         z-index: 2;
-        top: 40%;
-        left: 25%; 
+        top: 10%;
+        left: 27%; 
     }
      /* GUITARRA*/
     .imge{
         position: absolute;
         z-index: 2;
-        top: 7%;
-        left: 65%; 
+        top: 30%;
+        left: 5%; 
     }
      /*SAXOFON */
     .imgf{
         position: absolute;
         z-index: 2;
-        top: 25%;
-        left: 75%; 
+        top: 35%;
+        left: 15%; 
     }
      /* TAMBOR*/
     .imgg{
         position: absolute;
         z-index: 2;
-        top: 2%;
-        left: 85%; 
+        top: 30%;
+        left: 25%; 
     }
      /*TROMPETA */
     .imgh{
         position: absolute;
         z-index: 2;
-        top: 44%;
-        left: 65%; 
+        top: 54%;
+        left: 15%; 
     }
      /* VIOLIN*/
     .imgi{
         position: absolute;
         z-index: 2;
-        top: 40%;
-        left: 90%; 
+        top: 50%;
+        left: 25%; 
     }
     .main_img--acordeon{
         position: absolute;
         z-index: 4;
-        top: 13%;
-        left: 2%; 
-        width: 10rem;
+        top: 15%;
+        left: 4.5%; 
+        
     }
     .main_img--bateria{
         position: absolute;
