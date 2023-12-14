@@ -26,87 +26,16 @@ function changeVentana() {
   }
 }
 
-function changeA() {
-  let img = document.getElementById("polaroidA");
+function changePolaroidImage(letter) {
+  let img = document.getElementById(`polaroid${letter}`);
 
   if (img.src.match("Color")) {
     img.src = "img/polaroidGrisClaro.png";
   } else {
-    img.src = "img/polaroidColorA.png";
+    img.src = `img/polaroidColor${letter}.png`;
   }
 }
-function changeB() {
-  let img = document.getElementById("polaroidB");
 
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorB.png";
-  }
-}
-function changeC() {
-  let img = document.getElementById("polaroidC");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorC.png";
-  }
-}
-function changeD() {
-  let img = document.getElementById("polaroidD");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorD.png";
-  }
-}
-function changeE() {
-  let img = document.getElementById("polaroidE");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorE.png";
-  }
-}
-function changeF() {
-  let img = document.getElementById("polaroidBF");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorF.png";
-  }
-}
-function changeG() {
-  let img = document.getElementById("polaroidG");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorG.png";
-  }
-}
-function changeH() {
-  let img = document.getElementById("polaroidH");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorH.png";
-  }
-}
-function changeI() {
-  let img = document.getElementById("polaroidI");
-
-  if (img.src.match("Color")) {
-    img.src = "img/polaroidGrisClaro.png";
-  } else {
-    img.src = "img/polaroidColorI.png";
-  }
-}
 function changeAcordeon() {
   let img = document.getElementById("imgAcordeon");
 
@@ -114,7 +43,6 @@ function changeAcordeon() {
     img.src = "fotoaudio/audio/acordeonnbn.png";
   } else {
     img.src = "fotoaudio/audio/acordeoncolor.png";
-    
   }
 }
 function changeBateria() {
@@ -190,47 +118,69 @@ function changeViolin() {
   }
 }
 function reproducirAudioAcordeon() {
-  let audio = new Audio('fotoaudio/audio/acordeon.mp3');
+  let audio = new Audio("fotoaudio/audio/acordeon.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioBateria() {
-  let audio = new Audio('fotoaudio/audio/bateria.mp3');
+  let audio = new Audio("fotoaudio/audio/bateria.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioContrabajo() {
-  let audio = new Audio('fotoaudio/audio/contrabajo.mp3');
+  let audio = new Audio("fotoaudio/audio/contrabajo.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioElectrica() {
-  let audio = new Audio('fotoaudio/audio/electrica.mp3');
+  let audio = new Audio("fotoaudio/audio/electrica.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioGuitarra() {
-  let audio = new Audio('fotoaudio/audio/guitarra.mp3');
+  let audio = new Audio("fotoaudio/audio/guitarra.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioSaxofon() {
-  let audio = new Audio('fotoaudio/audio/saxofon.mp3');
+  let audio = new Audio("fotoaudio/audio/saxofon.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioTrompeta() {
-  let audio = new Audio('fotoaudio/audio/trompeta.mp3');
+  let audio = new Audio("fotoaudio/audio/trompeta.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudiotTambor() {
-  let audio = new Audio('fotoaudio/audio/tambor.mp3');
+  let audio = new Audio("fotoaudio/audio/tambor.mp3");
   audio.currentTime = 0;
   audio.play();
 }
 function reproducirAudioViolin() {
-  let audio = new Audio('fotoaudio/audio/violin.mp3');
+  let audio = new Audio("fotoaudio/audio/violin.mp3");
   audio.currentTime = 0;
   audio.play();
-} 
+}
+
+document.getElementById("imgInterruptor").addEventListener("click", () => {
+  
+  const letters = ["A","B","C","D","E", "F", "G", "H", "I"];
+
+  for (const letter of letters) {
+    changePolaroidImage(letter);
+  }
+  
+  changeVentana();
+  changeFondo();
+
+  changeAcordeon();
+  changeBateria();
+  changeContrabajo();
+  changeElectrica();
+  changeGuitarra();
+  changeSaxofon();
+  changeTambor();
+  changeTrompeta();
+  changeViolin();
+});
