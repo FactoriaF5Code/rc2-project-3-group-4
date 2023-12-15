@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       audio.play();
   }
 
-  // Mapeo de teclas del teclado a notas del piano
+ 
   const keyMappings = {
       'A': 'Do',
       'S': 'Re',
@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'ArrowLeft': 'Sol',
       'ArrowDown': 'La',
       'ArrowRight': 'Si'
-      // Puedes agregar más mapeos según sea necesario
+      
   };
 
-  // Manejador de eventos para presionar teclas del teclado
+ 
   document.addEventListener('keydown', function (event) {
       const key = event.key.toUpperCase();
       const keyElement = document.querySelector(`[data-note="${keyMappings[key]}"]`);
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 
-  // Manejador de eventos para liberar teclas del teclado
+ 
   document.addEventListener('keyup', function (event) {
       const key = event.key.toUpperCase();
       const keyElement = document.querySelector(`[data-note="${keyMappings[key]}"]`);
@@ -61,20 +61,41 @@ document.addEventListener('DOMContentLoaded', function () {
           keyElement.classList.remove('active');
       }
   });
+
+  document.addEventListener('keydown', function (event) {
+  let img = document.getElementById("imgGato");
+  
+  if (img.src.match("Der")) {
+    img.src = "img/gatoColor.png";
+  } else {
+    img.src = "img/gatoColorDer.png";
+  }
+})
+function changeGato() {
+  let img = document.getElementById("imgGato");
+
+  if (img.src.match("Der")) {
+    img.src = "img/gatoColor.png";
+  } else {
+    img.src = "img/gatoColorDer.png";
+  }
+}
+
+
  
-  let isSongPlaying = false; // Variable para rastrear si la canción está reproduciéndose
+  let isSongPlaying = false; 
   let audio = new Audio('notes/piano.mp3');
-  // Manejador de clic en el botón de reproducción de canción
+ 
   const playButton = document.getElementById('playButton');
   playButton.addEventListener('click', function () {
       if (!isSongPlaying) {
           playSong();
           isSongPlaying = true;
-          playButton.textContent = 'Detener Canción'; 
+          playButton.textContent = 'Pausa'; 
       } else {
           stopSong();
           isSongPlaying = false;
-          playButton.textContent = 'Reproducir Canción'; 
+          playButton.textContent = '-Play-'; 
       }
   });
 
@@ -91,15 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-function changeGato() {
-    let img = document.getElementById("imgGato");
-  
-    if (img.src.match("Der")) {
-      img.src = "img/gatoNegro.png";
-    } else {
-      img.src = "img/gatoNegroDer.png";
-    }
-  }
+
 
   function changeInterruptor() {
     let img = document.getElementById("imgInterruptor");
@@ -146,14 +159,6 @@ function changePaz() {
       img.src = "img/nochePazColor.png";
     }
 }
-function changeGatoColor() {
-    let img = document.getElementById("imgGato");
 
-    if (img.src.match("Color")) {
-        img.src = "img/gatoNegro.png";
-    } else {
-      img.src = "img/gatoColor.png";
-    }
-}
 
 

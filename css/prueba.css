@@ -67,15 +67,15 @@ width: 10rem;
     .imga{
         position: absolute;
         z-index: 2;
-        top: 10%;
-        left: 1%;
+        top:54%;
+        left: 26%;
 
     }
     .main_img--acordeon{
         position: absolute;
         z-index: 4;
-        top: 13%;
-        left: 3%;
+        top: 57%;
+        left: 28%;
         width: 4rem;
         
     }
@@ -83,28 +83,28 @@ width: 10rem;
     .imgb {
         position: absolute;
         z-index: 2;
-        top: 2%;
-        left: 10%; 
+        top: 15%;
+        left: 7%; 
     }
     .main_img--bateria{
         position: absolute;
         z-index: 2;
-        top: 6%;
-        left: 11.5%; 
+        top: 21%;
+        left: 8.5%; 
         width: 6rem;
     }
      /* CONTRABAJO*/
     .imgc{
         position: absolute;
         z-index: 2;
-        top: 12%;
-        left: 18%;
+        top: 10%;
+        left: 88%;
     }
     .main_img--contrabajo{
         position: absolute;
         z-index: 2;
-        top: 15%;
-        left: 20%;
+        top: 12.5%;
+        left: 90%;
         width: 4rem;
     }
      /* ELECTRICA*/
@@ -112,13 +112,13 @@ width: 10rem;
         position: absolute;
         z-index: 2;
         top: 10%;
-        left: 27%; 
+        left: 74%; 
     }
     .main_img--electrica{
         position: absolute;
         z-index: 2;
         top: 13%;
-        left: 29%;  
+        left: 76%;  
         width: 5rem;
         
     }
@@ -127,42 +127,42 @@ width: 10rem;
         position: absolute;
         z-index: 2;
         top: 30%;
-        left: 5%; 
+        left: 70%; 
     }
     .main_img--guitarra{
         position: absolute;
         z-index: 2;
         top: 33%;
-        left: 7%; 
+        left: 72%; 
         width: 5rem;
     }
      /*SAXOFON */
     .imgf{
         position: absolute;
         z-index: 2;
-        top: 35%;
-        left: 15%; 
+        top: 54%;
+        left: 17%; 
     }
    
     .main_img--saxofon{
         position: absolute;
         z-index: 2;
-        top: 38%;
-        left: 17.5%; 
+        top: 57%;
+        left: 19.5%; 
         width: 3.5rem;
     }
      /* TAMBOR*/
     .imgg{
         position: absolute;
         z-index: 2;
-        top: 30%;
-        left: 25%; 
+        top: 15%;
+        left: 15%; 
     }
     .main_img--tambor{
         position: absolute;
         z-index: 2;
-        top: 33%;
-        left: 27%; 
+        top: 18%;
+        left: 17%; 
         width: 5rem;
     }
      /*TROMPETA */
@@ -170,28 +170,49 @@ width: 10rem;
         position: absolute;
         z-index: 2;
         top: 54%;
-        left: 15%; 
+        left: 8%; 
     }
     .main_img--trompeta{
         position: absolute;
         z-index: 2;
         top: 57%;
-        left: 17%;
+        left: 10%;
         width: 4.5rem;
     }
      /* VIOLIN*/
     .imgi{
         position: absolute;
         z-index: 2;
-        top: 50%;
-        left: 25%; 
+        top: 30%;
+        left: 84%; 
     }   
     .main_img--violin{
         position: absolute;
         z-index: 2;
-        top: 54%;
-        left: 27.5%; 
+        top: 34%;
+        left: 86.5%; 
         width: 4rem;
+    }
+    .main_img--familiaCuerda{
+        width: 15rem;
+        position: absolute;
+        top: 49%;
+        left: 80%;
+        z-index: 11;
+     }
+    .main_img--familiaViento{
+        width: 15rem;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: 11;  
+    }
+    .main_img--familiaPercusion{
+        width: 15rem;
+        position: absolute;
+        top: 3%;
+        left: 10%;
+        z-index: 11;
     }
 
     

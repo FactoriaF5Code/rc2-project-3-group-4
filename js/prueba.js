@@ -6,7 +6,7 @@ function changeFondo() {
   } else {
     img.src = "img/fondoParedColor.png";
   }
-  function changeInter() {
+  function changeInterruptor() {
     let img = document.getElementById("imgInterruptor");
 
     if (img.src.match("Color")) {
@@ -16,6 +16,7 @@ function changeFondo() {
     }
   }
 }
+
 function changeVentana() {
   let img = document.getElementById("imgVentana");
 
@@ -25,6 +26,34 @@ function changeVentana() {
     img.src = "img/windowColor.png";
   }
 }
+function changeCuerda() {
+  let img = document.getElementById("imgFamCuerda");
+
+  if (img.src.match("Color")) {
+    img.src = "img/familiaCuerda.png";
+  } else {
+    img.src = "img/familiaCuerdaColor.png";
+  }
+}
+function changeViento() {
+  let img = document.getElementById("imgFamViento");
+
+  if (img.src.match("Color")) {
+    img.src = "img/familiaViento.png";
+  } else {
+    img.src = "img/familiaVientoColor.png";
+  }
+}
+function changePercusion() {
+  let img = document.getElementById("imgFamPercusion");
+
+  if (img.src.match("Color")) {
+    img.src = "img/familiaPercusion.png";
+  } else {
+    img.src = "img/familiaPercusionColor.png";
+  }
+}
+
 
 function changePolaroidImage(letter) {
   let img = document.getElementById(`polaroid${letter}`);
@@ -150,8 +179,8 @@ function reproducirAudioSaxofon() {
 function reproducirAudioTrompeta() {
   let audio = new Audio("fotoaudio/audio/trompeta.mp3");
   audio.currentTime = 0;
-  audio.play();
-}
+  audio.play();}
+ 
 function reproducirAudiotTambor() {
   let audio = new Audio("fotoaudio/audio/tambor.mp3");
   audio.currentTime = 0;
@@ -170,8 +199,9 @@ document.getElementById("imgInterruptor").addEventListener("click", () => {
   for (const letter of letters) {
     changePolaroidImage(letter);
   }
+});
   
-  changeVentana();
+ /* changeVentana();
   changeFondo();
 
   changeAcordeon();
@@ -182,5 +212,5 @@ document.getElementById("imgInterruptor").addEventListener("click", () => {
   changeSaxofon();
   changeTambor();
   changeTrompeta();
-  changeViolin();
-});
+  changeViolin();*/
+
