@@ -6,6 +6,7 @@ function changeFondo() {
   } else {
     img.src = "img/fondoParedColor.png";
   }
+}
   function changeInterruptor() {
     let img = document.getElementById("imgInterruptor");
 
@@ -15,7 +16,7 @@ function changeFondo() {
       img.src = "img/interruptorParedColor.png";
     }
   }
-}
+
 
 function changeVentana() {
   let img = document.getElementById("imgVentana");
@@ -51,6 +52,16 @@ function changePercusion() {
     img.src = "img/familiaPercusion.png";
   } else {
     img.src = "img/familiaPercusionColor.png";
+  }
+}
+
+function changeInterruptor() {
+  let img = document.getElementById("imgInterruptor");
+
+  if (img.src.match("Color")) {
+    img.src = "img/interruptorPared.png";
+  } else {
+    img.src = "img/interruptorParedColor.png";
   }
 }
 
@@ -190,9 +201,7 @@ function reproducirAudioViolin() {
   let audio = new Audio("fotoaudio/audio/violin.mp3");
   audio.currentTime = 0;
   audio.play();
-  setTimeout(function () {
-    audio.pause();
-  }, 3000);
+  
 }
 
 document.getElementById("imgInterruptor").addEventListener("click", () => {
@@ -203,16 +212,4 @@ document.getElementById("imgInterruptor").addEventListener("click", () => {
   }
 });
   
- /* changeVentana();
-  changeFondo();
-
-  changeAcordeon();
-  changeBateria();
-  changeContrabajo();
-  changeElectrica();
-  changeGuitarra();
-  changeSaxofon();
-  changeTambor();
-  changeTrompeta();
-  changeViolin();*/
-
+ 

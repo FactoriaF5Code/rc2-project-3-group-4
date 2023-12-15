@@ -79,7 +79,7 @@ function changeFoto2() {
   if (img.src.match("Color")) {
     img.src = "img/fotoPared2.png";
   } else {
-    img.src = "img/fotoParedColor2g.png";
+    img.src = "img/fotoParedColor2gg.png";
   }
 }
 function changeNombre() {
@@ -111,4 +111,20 @@ function changeFondo() {
     }
 }
 
+
+function reproducirAudioYoda() {
+  let audio = new Audio("fotoaudio/audio/ringtones-yoda.mp3");
+  audio.currentTime = 0;
+  audio.play();
+}
+function reproducirAudioCamara() {
+  let audio = new Audio("fotoaudio/audio/audioCamara.mp3");
+  audio.currentTime = 0;
+  audio.play();
+}
+function reproducirAudioRefresco() {
+  let audio = new Audio("fotoaudio/audio/audioRefresco.mp3");
+  audio.currentTime = 0;
+  audio.play();
+}
 

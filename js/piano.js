@@ -73,14 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 function changeGato() {
   let img = document.getElementById("imgGato");
-
   if (img.src.match("Der")) {
     img.src = "img/gatoColor.png";
   } else {
     img.src = "img/gatoColorDer.png";
   }
 }
-
 
  
   let isSongPlaying = false; 
@@ -111,7 +109,14 @@ function changeGato() {
   
 });
 
-
+function changeGato() {
+  let img = document.getElementById("imgGato");
+  if (img.src.match("Der")) {
+    img.src = "img/gatoColor.png";
+  } else {
+    img.src = "img/gatoColorDer.png";
+  }
+}
 
 
   function changeInterruptor() {
