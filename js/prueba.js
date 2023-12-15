@@ -190,11 +190,13 @@ function reproducirAudioViolin() {
   let audio = new Audio("fotoaudio/audio/violin.mp3");
   audio.currentTime = 0;
   audio.play();
+  setTimeout(function () {
+    audio.pause();
+  }, 3000);
 }
 
 document.getElementById("imgInterruptor").addEventListener("click", () => {
-  
-  const letters = ["A","B","C","D","E", "F", "G", "H", "I"];
+  const letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
 
   for (const letter of letters) {
     changePolaroidImage(letter);
